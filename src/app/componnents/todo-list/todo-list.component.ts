@@ -24,6 +24,10 @@ export class TodoListComponent implements OnInit, OnDestroy {
   }
   public onTodoClick(todo:ITodo, index:number){
     this.todosService.setSelectedTodo(todo);
+    this.todos.forEach(todo=>{
+      if(todo.selected){
+        todo.selected = false;
+      }})
     this.todos[index].selected = true;
   }
 
