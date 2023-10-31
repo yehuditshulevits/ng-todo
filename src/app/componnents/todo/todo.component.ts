@@ -29,6 +29,7 @@ export class TodoComponent implements OnInit, OnDestroy {
     todo.isCompleted = true;
   }
   public onArchivedTodo():void{
-    this.todo.isArchived = true
+    this.todo.isArchived = true;
+    
   }
 }

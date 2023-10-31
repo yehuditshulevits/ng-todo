@@ -1,4 +1,4 @@
-<mat-card class="todo-card" *ngIf="todo">
+<mat-card class="todo-card" *ngIf="todo&&!todo.isArchived" >
   <mat-card-header>
     <div mat-card-avatar class="todo-header-image"></div>
     <mat-card-title>{{todo.titel}}</mat-card-title>
